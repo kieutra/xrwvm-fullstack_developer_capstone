@@ -55,5 +55,5 @@ jobs:
       run: |
         echo "Linting JavaScript files..."
         # You can replace this with ESLint for more modern linting
-        jshint ./server/database/**/*.js  # Lint all JS files in server/database directory
+        eslint ./server/database/**/*.js  # Lint all JS files in server/database directory
         echo "Linted all JavaScript files successfully"
