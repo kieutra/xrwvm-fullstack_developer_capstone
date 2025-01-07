@@ -38,6 +38,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
+      uses: actions/checkout@v3
+      
+    - name: Go to package.json
       uses: cd ./server
 
     - name: Install Node.js
