@@ -36,13 +36,12 @@ jobs:
   lint_js:
     name: Lint JavaScript Files
     runs-on: ubuntu-latest
-    steps:
-    - name: Go to package.json
-      run: cd ./server
+    steps:    
     - name: Checkout Repository
       uses: actions/checkout@v3
-      
 
+    - name: Navigate to correct directory (if necessary)
+      run: cd xrwvm-fullstack_developer_capstone/server>  # Replace with the correct subdirectory if needed
 
     - name: Install Node.js
       uses: actions/setup-node@v3
