@@ -40,16 +40,11 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Navigate to server directory
-      run: cd server
-
     - name: Install Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 16
         
-    - name: Navigate to server directory2
-      run: cd server
     - name: Install dependencies
       run: npm install
 
