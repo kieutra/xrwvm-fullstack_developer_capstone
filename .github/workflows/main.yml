@@ -41,7 +41,7 @@ jobs:
       uses: actions/checkout@v3
       
     - name: Go to package.json
-      uses: cd ./server
+      run: cd ./server
 
     - name: Install Node.js
       uses: actions/setup-node@v3
