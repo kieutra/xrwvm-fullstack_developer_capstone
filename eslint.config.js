@@ -1,8 +1,10 @@
 module.exports = {
-    env: {
-      browser: true,
-      node: true,
-    },
+    languageOptions: {
+        globals: {
+          browser: true,
+          node: true,
+        },
+      },
     extends: [
       "eslint:recommended", // You can add more configurations, e.g., airbnb, prettier
     ],
